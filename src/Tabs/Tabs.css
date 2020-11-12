@@ -1,0 +1,112 @@
+.tab-icon-door {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #ffffff;
+}
+
+.tab-icon-devices {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #ffffff;
+  width: 7rem;
+  height: 9rem;
+  margin-bottom: -6rem;
+}
+
+.tab-icon-price {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #ffffff;
+  width: 3rem;
+  max-width: 80%;
+  height: 5rem;
+  margin-bottom: -2rem;
+}
+
+ul {
+  padding: 0;
+}
+
+.tabs {
+  padding-top: 1rem;
+}
+
+.tab {
+  color: #999;
+}
+
+.tab:hover {
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+svg {
+  cursor: pointer;
+}
+
+svg:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in;
+}
+
+.tab-nav-container {
+  margin: 2rem auto 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  color: var(--grey);
+}
+
+.active {
+  border-bottom: 4px solid var(--red);
+  color: #ffffff;
+}
+
+.tab-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.tab-content-container img {
+  width: 20rem;
+}
+.tab-content-container .tab-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.2rem;
+  align-items: center;
+  font-size: 1.8rem;
+  padding: 2.5rem;
+}
+
+.small {
+  margin: 1rem 0 !important;
+  font-size: 1rem !important;
+  padding: 0.7rem !important;
+}
+
+@media screen and (max-width: 760px) {
+  .tab-nav-container {
+    justify-content: center;
+  }
+
+  .tab-content-container {
+    width: 70%;
+  }
+  .tab-content-container img {
+    width: 10rem;
+  }
+  .tab-content-container .tab-content {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=Tabs.css.map */
