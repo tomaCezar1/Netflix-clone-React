@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from "../Components/Header";
 import TabComponents from "../Components/TabComponents";
+import Footer from "../Components/Footer";
 
 class Main extends Component {
     render() {
@@ -10,6 +11,7 @@ class Main extends Component {
                 <div style={containerStyle} className='container'>
                     <TabComponents/>
                 </div>
+                <Footer/>
             </>
         );
     }

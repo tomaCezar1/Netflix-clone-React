@@ -33,6 +33,7 @@ ul {
 
 .tab {
   color: #999;
+  outline: none;
 }
 
 .tab:hover {

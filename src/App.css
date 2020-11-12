@@ -42,21 +42,6 @@ li {
     z-index: 3 ;
 }
 
-/*.dark-bg {*/
-/*        !*content: '';*!*/
-/*        position: absolute;*/
-/*        top: 0;*/
-/*        left: 0;*/
-/*        height: 100%;*/
-/*        width: 100%;*/
-/*        background: rgba(0, 0, 0, 0.5);*/
-/*        pointer-events: none;*/
-/*        box-shadow: inset 1rem 1rem 8rem 2rem var(--dark),*/
-/*        inset 0 0 8rem 2rem var(--dark);*/
-/*        z-index: 4;*/
-/*    }*/
-
-
 .header-container::before {
     content: '';
     position: absolute;

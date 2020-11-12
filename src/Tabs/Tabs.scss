@@ -42,7 +42,8 @@ ul {
 }
 
 .tab {
-  color: $lightGrey
+  color: $lightGrey;
+  outline: none;
 }
 
 .tab:hover {
