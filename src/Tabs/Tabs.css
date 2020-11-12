@@ -93,6 +93,50 @@ svg:hover {
   padding: 0.7rem !important;
 }
 
+.tab-bottom-pics p {
+  color: #999;
+}
+
+.tab-top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.tab-bottom-content {
+  margin: 2rem auto;
+}
+.tab-bottom-content table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+.tab-bottom-content table thead {
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+.tab-bottom-content table tbody {
+  vertical-align: middle;
+}
+.tab-bottom-content tr td {
+  color: #999;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+}
+.tab-bottom-content tbody tr td:first-child {
+  text-align: left;
+}
+.tab-bottom-content tbody tr:nth-child(even) {
+  background: #222;
+}
+
 @media screen and (max-width: 760px) {
   .tab-nav-container {
     justify-content: center;
@@ -106,6 +150,24 @@ svg:hover {
   }
   .tab-content-container .tab-content {
     font-size: 1rem;
+  }
+
+  .tab-top-content {
+    justify-content: space-around;
+    width: 90%;
+  }
+  .tab-top-content p {
+    margin-left: 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .tab-bottom-pics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+    margin-top: 2rem;
   }
 }
 

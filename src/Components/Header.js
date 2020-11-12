@@ -8,6 +8,7 @@ class Header extends Component {
     render() {
         return (
             <div>
+                <div className='dark-bg'>
                 <HeaderComponent className="header-container">
                     <div className='top-header-container'>
                         <Logo src={logo} alt="netflix"/>
@@ -19,6 +20,7 @@ class Header extends Component {
                         <Button><Link to=''/></Button>
                     </div>
                 </HeaderComponent>
+                </div>
             </div>
         );
     }

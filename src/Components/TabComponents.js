@@ -7,48 +7,59 @@ import '../Tabs/Tabs.css';
 // Tab Components
 import TabComponentOne from "./TabComponentOne";
 import TabComponentTwo from "./TabComponentTwo";
+import TabComponentThree from "./TabComponentThree";
 
 class TabComponents extends Component {
     state = {
-        isActiveIndex: 0
+        tabIndex: 0,
+        isVisible: true
     }
 
     changeIndex = (tabIndex) => {
-        this.setState({isActiveIndex: tabIndex})
+        this.setState({tabIndex: tabIndex})
     }
 
     render() {
         return (
             <div>
-                <Tabs className='tabs'>
+                <Tabs
+                    className='tabs'
+                    // selectedIndex={this.state.tabIndex}
+                    // onSelect={tabIndex => this.setState({tabIndex})}
+                >
                     <TabList className='tab-nav-container'>
-                        <Tab className={`${this.state.isActiveIndex === 0 ? 'active' : null} tab`}
+                        <Tab className={`${this.state.tabIndex === 0 ? 'active' : null} tab`}
                              key={0}
                              onClick={() => this.changeIndex(0)}
-                             selectedIndex={this.state.isActiveIndex}
+                             // selectedIndex={this.state.tabIndex}
                         >
                             <Door/>
                             <p>Cancel Anytime</p>
                         </Tab>
-                        <Tab className={`${this.state.isActiveIndex === 1 ? 'active' : null} tab`}
+                        <Tab className={`${this.state.tabIndex === 1 ? 'active' : null} tab`}
                              key={1}
                              onClick={() => this.changeIndex(1)}
                         >
                             <Devices/>
                             <p>Watch Anywhere</p>
                         </Tab>
-                        <Tab className={`${this.state.isActiveIndex === 2 ? 'active' : null} tab`}
+                        <Tab className={`${this.state.tabIndex === 2 ? 'active' : null} tab`}
                              key={2}
-                             onClick={() => this.changeIndex(2)}>
+                             onClick={() => this.changeIndex(2)}
+                        >
                             <Prices/>
                             <p>Affordable Prices</p>
                         </Tab>
                     </TabList>
+                    {/*Tab Content*/}
                     <TabPanel/>
-                    <TabComponentOne/>
+                        <TabComponentOne visible={this.state.tabIndex === 0 ? true: null}/>
                     <TabPanel/>
                     <TabPanel/>
-                    <TabComponentTwo/>
+                        <TabComponentTwo visible={this.state.tabIndex === 1 ? true: null}/>
+                    <TabPanel/>
+                    <TabPanel/>
+                    <TabComponentThree visible={this.state.tabIndex === 2 ? true: null}/>
                     <TabPanel/>
                 </Tabs>
             </div>

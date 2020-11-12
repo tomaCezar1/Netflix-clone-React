@@ -5,12 +5,13 @@ import Button from "./Button";
 
 function TabComponentOne(props) {
     return (
-        <div className='tab-content-container'>
+        <div className='tab-content-container' style={props.visible ? null: none}>
             <div className="tab-content">
                 <div>
-                <span>
-                    No commitment. Cancel online anytime.
-                </span>
+                <p style={{ textAlign: 'left'}}>
+                    If Netflix isn't for you - No commitment.
+                    Cancel anytime.
+                </p>
                 <Button small>
                     Try it now.
                 </Button>
@@ -22,3 +23,7 @@ function TabComponentOne(props) {
 }
 
 export default TabComponentOne;
+
+const none = {
+    display: 'none'
+}
