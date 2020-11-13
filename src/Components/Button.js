@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaAngleRight } from 'react-icons/fa';
-import '../Tabs/Tabs.css';
+import '../Styles/Tabs.css';
 
 function Button(props) {
     return (

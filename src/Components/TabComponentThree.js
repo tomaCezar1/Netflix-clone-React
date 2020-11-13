@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from "./Button";
 import {FaCheck, FaTimes} from 'react-icons/fa';
-import '../Tabs/Tabs.css';
+import '../Styles/Tabs.css';
 
 function TabComponentThree(props) {
     return (

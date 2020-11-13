@@ -1,3 +1,63 @@
+.footer-container {
+  background: var(--extra-dark);
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  color: #999999;
+}
+.footer-container .footer-columns {
+  width: 80%;
+  margin: 1rem auto 0;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  color: #999999;
+}
+.footer-container ul li {
+  line-height: 2.5;
+}
+.footer-container a {
+  color: #999999;
+}
+.footer-container a:hover, .footer-container p span:hover {
+  transition: all ease 0.2s;
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer-container p {
+  margin-left: 10%;
+}
+.footer-container p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-container .lang-btn {
+  background: transparent;
+  border: 0.9px solid #333;
+  padding: 1rem;
+  width: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-container .toggle-language {
+  margin-left: 10%;
+  position: absolute;
+  cursor: pointer;
+  margin-bottom: -2rem;
+}
+.footer-container .toggle-language ul {
+  width: 8rem;
+  border: 1px solid #333333;
+  text-align: center;
+}
+.footer-container .toggle-language ul:hover {
+  background: #0085FF;
+  color: #ffffff;
+}
+.footer-container .toggle-language ul {
+  margin: 0;
+}
+
 .tab-icon-door {
   width: 2.8rem;
   height: 2.8rem;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from '../content/images/tab-1-pic.png';
-import '../Tabs/Tabs.css';
+import '../Styles/Tabs.css';
 import Button from "./Button";
 
 function TabComponentOne(props) {

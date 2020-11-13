@@ -1,0 +1,69 @@
+$lightGrey: #999999;
+
+.footer-container {
+  background: var(--extra-dark);
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  color: $lightGrey;
+
+  .footer-columns {
+    width: 80%;
+    margin: 1rem auto 0;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    color: $lightGrey;
+  }
+
+  ul li {
+    line-height: 2.5;
+  }
+
+  a {
+    color: $lightGrey;
+  }
+
+  a:hover, p span:hover {
+    transition: all ease 0.2s;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  p {
+    margin-left: 10%;
+  }
+
+  p span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .lang-btn {
+    background: transparent;
+    border: 0.9px solid #333;
+    padding: 1rem;
+    width: 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .toggle-language {
+    margin-left: 10%;
+    position: absolute;
+    cursor: pointer;
+    margin-bottom: -2rem;
+    ul {
+      width: 8rem;
+      border: 1px solid #333333;
+      text-align: center;
+    }
+    ul:hover {
+      background: #0085FF;
+      color: #ffffff;
+    }
+    ul {
+      margin: 0;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import Door from '../Tabs/DoorSVG';
 import Devices from '../Tabs/DevicesSVG';
 import Prices from "../Tabs/PricesSVG";
-import '../Tabs/Tabs.css';
+import '../Styles/Tabs.css';
 // Tab Components
 import TabComponentOne from "./TabComponentOne";
 import TabComponentTwo from "./TabComponentTwo";

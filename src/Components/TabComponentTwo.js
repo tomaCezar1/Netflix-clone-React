@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import img1 from '../content/images/tab-tv.png';
 import img2 from '../content/images/tab-tablet.png';
 import img3 from '../content/images/tab-macbook.png';
-import '../Tabs/Tabs.css';
+import '../Styles/Tabs.css';
 
 function TabComponentTwo(props) {
     return (
