@@ -3,6 +3,7 @@ import logo from '../content/svg/logo.svg';
 import {Link} from "react-router-dom";
 import styled from "styled-components";
 import Button from "./Button";
+import { generateMedia } from "styled-media-query";
 
 class Header extends Component {
     render() {
@@ -27,6 +28,13 @@ class Header extends Component {
 
 export default Header;
 
+const customMedia = generateMedia({
+    lgDesktop: '1350px',
+    mdDesktop: "1150px",
+    tablet: '960px',
+    smTablet: '740px'
+})
+
 const Logo = styled.img`
     width: 10rem;
     height: 3.5rem;
@@ -34,6 +42,8 @@ const Logo = styled.img`
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    ${customMedia.lessThan('tablet')
+    `left: 20%;`}
 `;
 
 const HeaderComponent = styled.div`
@@ -52,7 +62,10 @@ const HeaderComponent = styled.div`
         transition: background 0.13s ease-in;
         &:hover {
         background: var(--red-hover);
-        
+        ${customMedia.lessThan('smTablet')
+    `margin-top: 1.25rem;
+     right: 5%;
+    `}
         //optional styling
         // background: var(--white);
         // color: var(--red);

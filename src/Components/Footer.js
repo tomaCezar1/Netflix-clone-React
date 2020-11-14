@@ -49,7 +49,7 @@ class Footer extends Component {
                         <li><Link to=''>Media Center</Link></li>
                         <li><Link to=''>Buy Gift Cards</Link></li>
                         <li><Link to=''>Cookie preferences</Link></li>
-                        <li><Link to=''>Legal Noticesl</Link></li>
+                        <li><Link to=''>Legal Notices</Link></li>
                     </ul>
                     <div className="lang-btn"
                          onClick={this.handleToggle}>
