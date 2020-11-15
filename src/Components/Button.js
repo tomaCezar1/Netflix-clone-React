@@ -8,6 +8,7 @@ function Button(props) {
             <button
                 className={`try-button ${props.small ? 'small' : "null"}`}
                 style={style}
+                onClick={props.onClickError}
             >
                 {props.children}
                 <FaAngleRight className='angle-btn' style={angleStyle}/>
