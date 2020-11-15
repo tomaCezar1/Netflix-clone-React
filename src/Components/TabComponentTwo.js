@@ -14,7 +14,7 @@ function TabComponentTwo(props) {
                     <p>
                         Watch TV shows and movies anytime, anywhere.
                     </p>
-                    <Button small/>
+                    <Button small>Watch</Button>
                 </div>
                 {/*Bottom Content*/}
                 <div className="tab-bottom-pics">

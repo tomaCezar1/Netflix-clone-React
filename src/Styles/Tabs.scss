@@ -1,4 +1,5 @@
 @import '_Footer-styles';
+@import '_Login-styles';
 
 $white: #ffffff;
 $lightGrey: #999;
@@ -185,6 +186,15 @@ svg:hover {
     }
   }
 
+}
+
+@media screen and (max-width: 960px) {
+  .header-content > h1{
+    font-size: 4rem;
+  }
+  .header-content > h2 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {

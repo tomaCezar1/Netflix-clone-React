@@ -38,8 +38,8 @@ li {
     background: url("../content/images/bg.jpg") no-repeat center center/cover;
 }
 
-.top-header-container, .header-content {
-    z-index: 3 ;
+.top-header-container, .header-content > * {
+    z-index: 3;
 }
 
 .header-container::before {
@@ -53,9 +53,9 @@ li {
     pointer-events: none;
     box-shadow: inset 1rem 1rem 8rem 2rem var(--dark),
     inset 0 0 8rem 2rem var(--dark);
-    /*box-shadow: inset 120px 100px 250px #000000, inset -120px -100px -250px #000000;*/
 }
 
 .try-button:hover {
     background: var(--red-hover);
 }
+

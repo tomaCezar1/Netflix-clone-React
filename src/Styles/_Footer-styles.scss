@@ -2,7 +2,7 @@ $lightGrey: #999999;
 
 .footer-container {
   background: var(--extra-dark);
-  padding-top: 10rem;
+  padding-top: 1rem;
   padding-bottom: 3rem;
   color: $lightGrey;
 
@@ -65,5 +65,11 @@ $lightGrey: #999999;
     ul {
       margin: 0;
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }

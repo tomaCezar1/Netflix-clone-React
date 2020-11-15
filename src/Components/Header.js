@@ -13,12 +13,12 @@ class Header extends Component {
                 <HeaderComponent className="header-container">
                     <div className='top-header-container'>
                         <Logo src={logo} alt="netflix"/>
-                        <Link className="sign-in-btn" to='/'>Sign In</Link>
+                        <Link className="sign-in-btn" to='/login'>Sign In</Link>
                     </div>
                     <div className='header-content'>
                         <Title>Unlimited TV shows.</Title>
                         <Subtitle>Watch Anywhere. Cancel Anytime.</Subtitle>
-                        <Button><Link to=''/></Button>
+                        <Button><Link to=''/>Try it now</Button>
                     </div>
                 </HeaderComponent>
             </div>
@@ -43,7 +43,7 @@ const Logo = styled.img`
     left: 50%;
     transform: translate(-50%, -50%);
     ${customMedia.lessThan('tablet')
-    `left: 20%;`}
+    `left: 25%;`}
 `;
 
 const HeaderComponent = styled.div`

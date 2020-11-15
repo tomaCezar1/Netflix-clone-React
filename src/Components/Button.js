@@ -9,7 +9,7 @@ function Button(props) {
                 className={`try-button ${props.small ? 'small' : "null"}`}
                 style={style}
             >
-                Try it now
+                {props.children}
                 <FaAngleRight className='angle-btn' style={angleStyle}/>
             </button>
         </div>
@@ -36,7 +36,7 @@ const angleStyle = {
     textAlign: 'center',
     verticalAlign: 'center',
     margin: 'auto',
-    marginLeft: '0.6rem'
+    marginLeft: '0.4rem'
 }
 
 export default Button;

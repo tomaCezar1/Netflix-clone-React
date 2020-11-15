@@ -10,7 +10,7 @@ function TabComponentThree(props) {
                 <p className='text-align-center'
                    style={{marginRight: '0.3rem'}}
                 >Choose One Netflix plan.</p>
-                <Button small/>
+                <Button small>Choose</Button>
             </div>
             <div className="tab-bottom-content">
                 <table>
