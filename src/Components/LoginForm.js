@@ -102,7 +102,10 @@ class LoginForm extends Component {
                                 <span>{this.state.passwordError}</span>
                             </div>
                             <div className="input-container-elements button-flex">
-                                <Button onClickError={e => this.onSubmit(e)}>Sign Up</Button>
+                                <Button
+                                    small
+                                    onClickError={e => this.onSubmit(e)}>Sign Up
+                                </Button>
                             </div>
                         </div>
                         <label className='checkbox-container'>
@@ -113,7 +116,6 @@ class LoginForm extends Component {
                             />
                             <span className="checkmark"> </span>
                         </label>
-                        <Link to='/' className='need-help'>Need Help</Link>
                     </form>
                 </div>
             </div>

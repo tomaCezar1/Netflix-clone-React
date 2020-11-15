@@ -59,3 +59,14 @@ li {
     background: var(--red-hover);
 }
 
+@media screen and (max-width: 960px) {
+    .header-container {
+        height: 120vh;
+        margin-bottom: 3rem;
+    }
+
+    .header-container::before {
+        height: 120vh;
+    }
+}
+

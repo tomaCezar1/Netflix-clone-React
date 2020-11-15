@@ -165,11 +165,11 @@ input:focus ~ label {
 
 .checkbox-container {
   margin-left: 0.75rem;
-  margin-top: 0.5rem;
   padding-left: 1.8rem;
   position: relative;
   font-size: 0.9rem;
   cursor: pointer;
+  width: 100%;
 }
 
 .checkbox-container input {

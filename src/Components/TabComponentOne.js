@@ -13,7 +13,7 @@ function TabComponentOne(props) {
                     Cancel anytime.
                 </p>
                 <Button small>
-                    Try it now
+                    Try it
                 </Button>
                 </div>
                 <img src={Img} alt=""/>
